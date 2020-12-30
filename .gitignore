@@ -1,0 +1,7 @@
+/vendor
+
+/wordpress/wp-config.php
+
+/wordpress/wp-content/themes/digimon/vendor
+
+composer.lock
