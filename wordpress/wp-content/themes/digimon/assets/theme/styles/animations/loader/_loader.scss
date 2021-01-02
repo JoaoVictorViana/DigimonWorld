@@ -1,13 +1,17 @@
 .loader-spin {
-    border: solid #f3f3f3 5px;
-    border-top: solid rgb(228, 228, 62) 5px;
-    border-radius: 50%;
-    width: 5vh;
-    height: 5vh;
-    animation: spin 2s linear infinite;
+  border: solid #f3f3f3 5px;
+  border-top: solid rgb(228, 228, 62) 5px;
+  border-radius: 50%;
+  width: 5vh;
+  height: 5vh;
+  animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

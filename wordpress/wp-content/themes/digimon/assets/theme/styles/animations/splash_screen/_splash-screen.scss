@@ -1,15 +1,15 @@
 .splash-screen {
-    height: 100%;
-    animation: splashScreen 5s ease;
-    animation-fill-mode: forwards;
+  height: 100%;
+  animation: splashScreen 5s ease;
+  animation-fill-mode: forwards;
 }
 
 @keyframes splashScreen {
-    0% {
-        background-color: $color-default;
-    }
+  0% {
+    background-color: $color-default;
+  }
 
-    100% {
-        background-color: rgb(19, 18, 18);
-    }
+  100% {
+    background-color: rgb(19, 18, 18);
+  }
 }
