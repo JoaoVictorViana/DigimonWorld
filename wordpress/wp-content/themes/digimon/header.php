@@ -14,5 +14,4 @@ if ( ! defined( 'ABSPATH' ) ) {
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-
-Teste Header
+    <div class="game" id="game-root"></div>

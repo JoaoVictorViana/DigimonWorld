@@ -5,8 +5,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-
-Teste Footer
-
     <?php wp_footer(); ?>
 </body>

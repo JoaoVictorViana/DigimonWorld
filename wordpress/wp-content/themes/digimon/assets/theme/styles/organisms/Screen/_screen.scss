@@ -1,0 +1,15 @@
+.screen {
+    height: 80vh;
+    width: 80vw;
+
+    &__container {
+        background-color: $color-default;
+        border: solid black 1px;
+        height: 100%;
+        width: auto;
+    }
+
+    @media screen and (min-width: $breakboint-desktop ) {
+        
+    }
+}
