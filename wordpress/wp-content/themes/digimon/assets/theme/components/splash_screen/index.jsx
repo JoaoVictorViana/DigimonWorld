@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from '../loader/index';
+import { getAuthenticated } from '../../requests';
 
 class SplashScreen extends React.Component {
     constructor(props) {
@@ -8,7 +9,7 @@ class SplashScreen extends React.Component {
         this.state = {
             time: 2000,
             playLoader: false,
-            renderLoader: true,
+            redirect: false,
         };
 
         this.handleUnmountLoader = this.handleUnmountLoader.bind(this);
@@ -20,17 +21,29 @@ class SplashScreen extends React.Component {
 
     handleUnmountLoader() {
         this.setState({
-            renderLoader: false,
+            playLoader: false,
+            redirect: true,
         })
     }
 
+    handleAuth(auth) {
+        document.location.href = auth ? '/home-2' : '/login';
+    }
+
     render() {
-        const { playLoader, renderLoader, } = this.state;
+        const { playLoader, redirect, } = this.state;
+
+        if (redirect) {
+            getAuthenticated(this.handleAuth);
+        }
 
         return (
             <div className="splash-screen">
-                {playLoader
-                    && renderLoader && (<Loader time={10000} handleUnmountLoader={this.handleUnmountLoader} />) 
+                {playLoader 
+                    && (<Loader
+                            time={5000}
+                            handleUnmountLoader={this.handleUnmountLoader}
+                        />) 
                 }
             </div>
         );

@@ -11,7 +11,9 @@ class Loader extends React.Component {
     }
 
     componentDidMount(){
-        setTimeout(() => this.props.handleUnmountLoader(), this.props.time);
+        setTimeout(() => {
+            this.props.handleUnmountLoader();
+        }, this.props.time);
     }
 
     render() {
