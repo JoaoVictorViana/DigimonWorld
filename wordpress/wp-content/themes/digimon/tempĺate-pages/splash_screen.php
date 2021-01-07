@@ -14,4 +14,4 @@
 </head>
 <body <?php body_class(); ?>>
 	<div class="game" id="splash_screen-root"></div>
-<?php get_footer(); ?>
+	<?php get_footer(); ?>

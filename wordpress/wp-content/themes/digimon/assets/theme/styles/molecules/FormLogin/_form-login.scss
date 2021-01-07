@@ -1,0 +1,24 @@
+.form-login {
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    margin-bottom: 1vh;
+    max-width: 80vh;
+  }
+
+  &__username {
+    margin-left: 14px;
+  }
+
+  &__password {
+    margin-left: 3vh;
+  }
+
+  &__submit {
+    max-width: 20vh;
+    margin-top: 2vh;
+  }
+}

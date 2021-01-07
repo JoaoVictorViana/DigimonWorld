@@ -2,6 +2,9 @@
 
 /wordpress/wp-config.php
 
+/wordpress/wp-content/themes/digimon/.cache
+/wordpress/wp-content/themes/digimon/dist
 /wordpress/wp-content/themes/digimon/vendor
+/wordpress/wp-content/themes/digimon/node_modules
 
 composer.lock

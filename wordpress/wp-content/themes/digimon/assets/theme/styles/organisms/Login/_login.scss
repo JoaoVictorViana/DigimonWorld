@@ -1,0 +1,28 @@
+.login {
+  height: 100%;
+
+  &__container {
+    height: 100%;
+    background-image: url("../images/login.png");
+    background-size: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 4vw;
+    align-items: baseline;
+    background-color: #eae0e0;
+    border: solid #1a7777 1px;
+    max-width: 55vh;
+  }
+
+  &__title {
+    margin-bottom: 4vh;
+
+    &-text {
+      font-size: 18px;
+      color: #aaaa7f;
+    }
+  }
+}
